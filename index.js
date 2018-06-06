@@ -1,11 +1,15 @@
 // import a library to help create a component
 import React from 'react';
-import { AppRegistry } from 'react-native';
-import Header from './src/components/header';
+import { AppRegistry, View } from 'react-native';
+import Header from './src/components/Header';
+import AlbumList from './src/components/AlbumList';
 
 // Create a component
 const App = () => (
+  <View style={{ flex: 1 }}>
     <Header text={'Albums'} />
+    <AlbumList />
+  </View>
 );
 
 /* Las llaves se pueden eliminar dado que no es necesario poner el return
